@@ -1,6 +1,7 @@
 header{
     top: 0;
     height: 75px;
+    width: 100%;
     background-color: #000821;
 }
 
@@ -40,23 +41,26 @@ header{
     border-bottom: solid 1.6px pink;
 }
 */
-.lbl-menu{
+.menu__boton{
     width: 50px;
     height: 30px;
+    top: 25%;
+    left: 5%;
     position: relative;
     cursor: pointer;
 }
 
-.lbl-menu #span1, #span2, #span3{
+.menu__boton #span1, #span2, #span3{
     position: absolute;
     content: '';
-    background-color: white;
+    background-color: aliceblue;
     width: 25px;
-    height: 1.8px;
+    height: 1.5px;
     border-radius: 5px;
     transition: all 400ms ease;
     margin-top: 25%;
     margin-left: 75%;
+    
 }
 
 #span1{
@@ -67,4 +71,89 @@ header{
 }
 #span3{
     top: 24px;
+}
+
+#esp{
+    margin-top: 20%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    padding: 0px 15px 25px 10px;
+    z-index: 5;
+}
+/*
+i{
+    position: absolute;
+    color: aliceblue;
+    margin-top: 25px;
+    margin-left: 10%;
+    cursor: pointer;
+}
+*/
+/*
+.container{
+    position: absolute;
+    margin-left: 20px;
+}
+
+i{
+    position: absolute;
+    color: black;
+    margin-top: 1.5%;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: rgb(255, 74, 74);
+    cursor: pointer;
+    transition: 0.5 ease;
+}
+
+i:hover{
+    transform: rotate(-15deg);
+}
+
+
+.buscador{
+    height: 30px;
+    width: 0;
+    margin: 20px 10px 10px -5px;
+    padding: 10px;
+    transition: 0.5 ease;
+}
+
+.btn{
+    position: relative;
+    margin: -15px 0px 40px;
+    transition: 0.7 ease;
+}
+
+.container:hover input{
+    transition: all 0.5 ease;
+    width: 200px;
+} */
+
+.box{
+    position: absolute;
+    top: 2.5%;
+    left: 15%;
+}
+input.src{
+    padding: 0px 9px 0px 32px;
+    outline: none;
+    font-size: 18px;
+    color: aliceblue;
+    border: solid 2px #263149;
+    background: #263149 url("/search-icon.png")
+        no-repeat 9px center;
+    width: 100px;
+    transition: all .5s;
+}
+
+::placeholder{
+    font-size: 18px;
+    color: white;
+}
+
+input.src:hover{
+    width: 200px;
+    color: white;
+    background-color: #263149;
 }
